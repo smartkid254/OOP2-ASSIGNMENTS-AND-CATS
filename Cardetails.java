@@ -44,17 +44,17 @@ public class Showroom {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Land cruiser: ");
+        System.out.print("Enter brand: ");
         String brand = input.nextLine();
 
-        System.out.print("prado: ");
+        System.out.print("Enter model: ");
         String model = input.nextLine();
 
-        System.out.print("2026: ");
+        System.out.print("Enter year: ");
         int year = input.nextInt();
         input.nextLine(); 
 
-        System.out.print("Diesel: ");
+        System.out.print("Enter fuel type: ");
         String fuelType = input.nextLine();
 
         Car car = new Car(brand, model, year, fuelType);
@@ -64,4 +64,5 @@ public class Showroom {
 
         input.close();
     }
+
 }
