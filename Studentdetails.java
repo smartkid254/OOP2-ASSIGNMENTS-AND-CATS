@@ -1,5 +1,5 @@
 /*
-Name: Ambrose
+Name: Ambrose Mutinda
 Reg: CT100/G/15932/22
 Description:program to display student details
 */
@@ -37,13 +37,13 @@ public class StudentApp {
         Scanner scanner = new Scanner(System.in);
 
         // Prompt user for input
-        System.out.print("41106499: ");
+        System.out.print("Enter student ID: ");
         String studentID = scanner.nextLine();
 
-        System.out.print("Ambrose Mutinda: ");
+        System.out.print("Enter Name: ");
         String name = scanner.nextLine();
 
-        System.out.print("Information Technology: ");
+        System.out.print("Enter Course: ");
         String course = scanner.nextLine();
 
         // Create StudentRecord object
@@ -56,3 +56,4 @@ public class StudentApp {
         scanner.close();
     }
 }
+
