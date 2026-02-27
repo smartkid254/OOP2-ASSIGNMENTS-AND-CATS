@@ -1,50 +1,58 @@
-/*
-Name:Ambrose
-Reg: CT100/G/15932/22
-Description:program to display employee salary
+/* 
+Name: Ambrose Mutinda
+Reg: CT100/G/15932/22 
+Description: Program to display employee salary 
 */
 
 import java.util.Scanner;
 
-class employee {
-string name;
-double salary;
+class Employee {
+    String name;
+    double salary;
+
+    // Constructor
+    Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    // Method to display details
+    void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Salary: " + salary);
+    }
 }
 
-Employee (string name,double salary) {
-    this.name=name;
-    this.salary=salary;
+class SalaryCalculator {
+    double calculateBonus(double salary) {
+        return 0.1 * salary;  // 10% bonus
     }
+}
 
-    void display() {
-        system.out.println("Name:" +name);
-        system.out.printin("Salary:" +salary);
-        }
+// Public class (Main class)
+public class MainApp {
+    public static void main(String[] args) {
 
-class salarycalculator {
-    double calculatorbonus (double salary) {
-        return 0.1 * salary;
-        }
-    }
-class MainApp {
-    public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter name and salary: ");
-        String name = Scanner next line();
-        double salary = Scanner next Double 
 
-        employee emp = new employee(name,salary);
-        System.out.print("Ambrose de smartkid: ");
-        emp displayDetails();
-        SalaryCalculator sal = new SalaryCalculator(salary);
-        System.out.print("This bonus is" +sal.calculateBonus());
+        System.out.print("Enter name: ");
+        String name = scanner.nextLine();
 
-        Scanner.close();
-        }
+        System.out.print("Enter salary: ");
+        double salary = scanner.nextDouble();
+
+        // Create Employee object
+        Employee emp = new Employee(name, salary);
+
+        System.out.println("\nEmployee Details:");
+        emp.displayDetails();
+
+        // Calculate bonus
+        SalaryCalculator sal = new SalaryCalculator();
+        double bonus = sal.calculateBonus(salary);
+
+        System.out.println("Bonus (10%): " + bonus);
+
+        scanner.close();
+    }
 }
-
-
-
-
-
-
