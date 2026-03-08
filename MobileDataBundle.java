@@ -1,7 +1,7 @@
 /*
 Name: Ambrose Mutinda
 Reg: CT100/G/15932/22
-Description:program to display local mobile service provider inernet data bundle offers
+Description:program to display local mobile service provider internet data bundle offers
 */
 
 import java.util.Scanner;
@@ -50,4 +50,5 @@ public class DataBundlePurchase {
         // Close scanner
         input.close();
     }
+
 }
